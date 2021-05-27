@@ -1,4 +1,5 @@
 import popupShow from './modules/popups';
+import tabsContainerSelector from './modules/tabs';
 
 window.addEventListener('DOMContentLoaded', () => {
     'use strict';
@@ -21,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
         closeSelector: '.popup-close'
     });
     
+    tabsContainerSelector('.portfolio-menu', '.portfolio-wrapper', 'active');
 
     
 
