@@ -1,5 +1,6 @@
 import popupShow from './modules/popups';
 import tabsContainerSelector from './modules/tabs';
+import slider from './modules/slider';
 
 window.addEventListener('DOMContentLoaded', () => {
     'use strict';
@@ -24,6 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
     
     tabsContainerSelector('.portfolio-menu', '.portfolio-wrapper', 'active');
 
+    slider('.main-slider', '.slider-wrapper', '.main-slider-item');
     
 
 
