@@ -1,6 +1,7 @@
 import popupShow from './modules/popups';
 import tabsContainerSelector from './modules/tabs';
 import slider from './modules/slider';
+import showMore from './modules/showMore';
 
 window.addEventListener('DOMContentLoaded', () => {
     'use strict';
@@ -28,6 +29,6 @@ window.addEventListener('DOMContentLoaded', () => {
     slider('.main-slider', '.slider-wrapper', '.main-slider-item');
     
 
-
+    showMore('.button-styles','.styles-container', 'col-sm-3 col-sm-offset-0 col-xs-10 col-xs-offset-1', 'hidden-lg hidden-md hidden-sm hidden-xs styles-2');
 //---------------------
 })
