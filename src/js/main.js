@@ -3,6 +3,7 @@ import tabsContainerSelector from './modules/tabs';
 import slider from './modules/slider';
 import showMore from './modules/showMore';
 import imageSize from './modules/imageSize';
+import accordion from './modules/accordion';
 
 window.addEventListener('DOMContentLoaded', () => {
     'use strict';
@@ -33,5 +34,7 @@ window.addEventListener('DOMContentLoaded', () => {
     showMore('.button-styles','.styles-container', 'col-sm-3 col-sm-offset-0 col-xs-10 col-xs-offset-1', 'hidden-lg hidden-md hidden-sm hidden-xs styles-2');
 
     imageSize('.sizes-block');
+
+    accordion('#accordion')
 //---------------------
 })
