@@ -33,11 +33,6 @@ const accordion = (accordionSelector) => {
             }
         })
     });
-    
-
-    
-
 }
 
-//slideInDown flipInX
 export default accordion;

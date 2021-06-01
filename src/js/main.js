@@ -4,6 +4,8 @@ import slider from './modules/slider';
 import showMore from './modules/showMore';
 import imageSize from './modules/imageSize';
 import accordion from './modules/accordion';
+import horisontalSlider from './modules/horisontalSlider';
+import calc from './modules/calc';
 
 window.addEventListener('DOMContentLoaded', () => {
     'use strict';
@@ -35,6 +37,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
     imageSize('.sizes-block');
 
-    accordion('#accordion')
+    accordion('#accordion');
+
+    horisontalSlider('.feedback-slider', '.feedback-slider__wrapper', '.feedback-block', '.main-prev-btn', '.main-next-btn');
+
+    calc();
 //---------------------
 })
