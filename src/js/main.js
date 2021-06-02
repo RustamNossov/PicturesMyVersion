@@ -6,9 +6,13 @@ import imageSize from './modules/imageSize';
 import accordion from './modules/accordion';
 import horisontalSlider from './modules/horisontalSlider';
 import calc from './modules/calc';
+import forms from './modules/forms';
+import burgerMenu from './modules/burgerMenu';
 
 window.addEventListener('DOMContentLoaded', () => {
     'use strict';
+
+    
 
     popupShow({
         btnSelector: '.button-design', 
@@ -42,5 +46,11 @@ window.addEventListener('DOMContentLoaded', () => {
     horisontalSlider('.feedback-slider', '.feedback-slider__wrapper', '.feedback-block', '.main-prev-btn', '.main-next-btn');
 
     calc();
+
+    forms('form');
+
+    burgerMenu('.burger', '.burger-menu');
+
+
 //---------------------
 })

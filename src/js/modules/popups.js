@@ -7,6 +7,8 @@ const popupShow = ({btnSelector, popupSelector, closeSelector}) => {
           allPopups = document.querySelectorAll('[data-modal]'),
           body = document.querySelector('body');
 
+          
+          
 
     // open popup popup-consultation after 60 seconds 
     function openPopupSetTimeout(popup, timeout) {
@@ -24,6 +26,12 @@ const popupShow = ({btnSelector, popupSelector, closeSelector}) => {
     // function openint popup
     const openPopup = (e, popupConsultationOpenTimeout) => {
         // block opening popup if any popup already displayed
+        e.classList.remove('fadeOut');
+        e.classList.add('fadeIn');
+        e.classList.add('animated');
+        e.style.animationDuration = '0.2s';
+
+
         let trigger = 0;
         allPopups.forEach( item => {
             if (window.getComputedStyle(item)['display'] != 'none') {
@@ -51,7 +59,13 @@ const popupShow = ({btnSelector, popupSelector, closeSelector}) => {
 
     // function closing popup
     const closePopup = (e) => {
-        e.style.display = 'none';
+        e.classList.add('fadeOut');
+        e.classList.remove('fadeIn');
+        e.classList.remove('animated');
+        setTimeout( ()=> {
+            e.style.display = 'none';
+        }, 200);
+        
         body.style.overflow = 'scroll';
     }
 
