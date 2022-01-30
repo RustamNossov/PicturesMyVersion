@@ -1,9 +1,12 @@
-# PicturesMyVersion
+# Pictures
 
-The second project is from the Javascript practice course. Link to the course https://www.udemy.com/course/javascript_practice/ 
-The project target is the automatization of the pre-made website layout.
+The second project from the Javascript practice course.
+Link to the course https://www.udemy.com/course/javascript_practice/
 
-There is a multi-modal structure and native JavaScript. 
+In this assignment, I received the HTML/CSS layout. 
+It was required to automate some application components using native JS and a modular structure. 
+Technical requirments:
+
 The project requires Animate.css, WebPack, Babel, and Gulp.
 
 The project includes the following modules:
