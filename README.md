@@ -5,7 +5,7 @@ Link to the course https://www.udemy.com/course/javascript_practice/
 
 In this assignment, I received the HTML/CSS layout. 
 It was required to automate some application components using native JS and a modular structure. 
-Technical requirments:
+Technical requirments: https://github.com/RustamNossov/PicturesMyVersion/blob/master/Technical%20requirement.pdf
 
 The project requires Animate.css, WebPack, Babel, and Gulp.
 
